@@ -65,6 +65,7 @@ a.skip:focus {
   float: left;
   width: 100%;
 }
+
 /* ====================== Navigation ====================== */
 nav {
   box-sizing: border-box;
@@ -116,12 +117,14 @@ nav h1 a {
     color: #01447e;
     text-decoration: underline;
 }
+
 /* ====================== Map ====================== */
 #map {
   height: 400px;
   width: 100%;
   background-color: #ccc;
 }
+
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   box-sizing: border-box;
