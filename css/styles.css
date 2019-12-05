@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-body,td,th,p{
+body,td,th,p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	color: #333;
@@ -24,7 +24,7 @@ a:hover, a:focus {
 	color: #3397db;
 	text-decoration: none;
 }
-a img{
+a img {
 	border: none 0px #fff;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -253,7 +253,7 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-  top:0;
+  top: 0;
   display: flex;
   flex-wrap: wrap;
 	width: 100%;
@@ -304,11 +304,40 @@ nav h1 a {
   padding: 20px 20px;
   position: relative;
 }
-#reviews-list li p {
+#text-align-list li p {
+  float: left;
   margin: 0 0 10px;
 }
 #restaurant-hours td {
   color: #666;
+}
+.reviews-name {
+  display: block;
+  float: left;
+  width: 50%;
+  background-color: #777;
+  color: #fff;
+  padding: 10px 20px;
+  margin: -20px -40px 20px -20px;
+}
+.reviews-date {
+  display: block;
+  float: right;
+  width: 50%;
+  background-color: #777;
+  color: #fff;
+  text-align: right;
+  padding: 10px 20px;
+  margin: -20px -20px 20px 0;
+}
+.rating {
+  float: left;
+  margin: 0 100% 20px 0;
+  background-color: #f58500;
+  padding: 5px;
+  width: 60px;
+  color: #fff;
+  text-align: center;
 }
 
 /* for iPads and Tablets */
