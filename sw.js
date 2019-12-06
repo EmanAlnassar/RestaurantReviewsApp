@@ -6,6 +6,7 @@ var urlsToCache = [
     '/css'
 ];
 
+// Install a service worker
 self.addEventListener('install', function (event) {
     // Perform install steps
     event.waitUntil(
@@ -17,6 +18,7 @@ self.addEventListener('install', function (event) {
     );
 });
 
+// Cache and return requests
 self.addEventListener('fetch', function (event) {
     event.respondWith(
         caches.match(event.request)
@@ -30,6 +32,7 @@ self.addEventListener('fetch', function (event) {
     );
 });
 
+// Update a service worker
 self.addEventListener('activate', function (event) {
 
     var cacheWhitelist = ['pages-cache-v1', 'rest-info-cache-v1'];
