@@ -73,7 +73,7 @@ nav {
   height: auto;
   padding: 10px;
   background-color: #252831;
-  text-align:center;
+  text-align: center;
 }
 nav h1 {
   margin: auto;
@@ -301,7 +301,7 @@ nav h1 a {
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 20px 20px;
+  padding: 20px 10px;
   position: relative;
 }
 #text-align-list li p {
