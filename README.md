@@ -1,33 +1,32 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
+# **Restaurant Reviews** App
 
-## Project Overview: Stage 1
+This is an _accessibility_ project at [**Udacity's FEND**](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011). It requires to make the provided site fully responsive across different devices (mobile-ready) and assessable throw keyboard and voice-over  users. Furthermore, update it to be an offline-first application.
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+## Folder Content
 
-### Specification
+- index.html
+- restaurant.html
+- /css
+- /data
+- /img
+- /js
+- sw.js
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality.
+## Getting Started & Experience
 
-### Project Rubric
+1. In this folder, run up a simple HTTP server to serve up the site files on your local computer. 
 
-Your project will be evaluated by a Udacity code reviewer according to the [Restaurant Reviews project rubric](https://review.udacity.com/#!/rubrics/1090/view). Please review for detailed project requirements. The rubric should be a resource you refer to periodically to make sure your project meets specifications.
+    * In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8228` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8228`. 
+   * Note -  For Windows systems, Python 3.x is installed as `python` by default. To start a Python 3.x server, you can simply enter `python -m http.server 8228`.
+2. With your server running, visit the site throw Google Chrome: `http://localhost:8228`.
 
-### What do I do from here?
+## User Experience
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer.
-
-    * In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
-   * Note -  For Windows systems, Python 3.x is installed as `python` by default. To start a Python 3.x server, you can simply enter `python -m http.server 8000`.
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
-
-## Leaflet.js and Mapbox:
-
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information.
-
-### Note about ES6
-
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future-proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write.
+1. Look around the site for a bit to see what the experience looks like.
+   - The site becomes fully responsive with the power of using `<meta>` viewport,  `%` value and `@media` query - _open the developer tool_ - to see how the site act with different devices.
+2. Use your keyboard to see how the site navigation behaves.
+   - Skip links and `tabindex` add to improve the navigation with the `tab` key by focusing important info and links.
+3. Use ChromeVox Classic Extension or another voice-over app to experiance the site navigation.
+   - role`, `aria-label` and `alt` attributes are used to make the reader-device read an explanation of hard to reach elements like visual content to provide smooth accessibility and powerful web browsing.
+4. Check that a service worker is enabled by going to `chrome://inspect/#service-workers` and looking for `http://localhost:8228/sw.js`.
+   - Add a ServiceWorker script to approach offline first power as if there is no internet connection to enhance the accessibility of the site.
